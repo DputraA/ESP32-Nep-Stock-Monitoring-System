@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Redirecting to ESP32</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f4f8;
+      color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+      text-align: center;
+    }
+    .loader {
+      border: 8px solid #f3f3f3;
+      border-top: 8px solid #3498db;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      animation: spin 1s linear infinite;
+      margin-bottom: 20px;
+    }
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    #status {
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <div class="loader"></div>
+  <div id="status">Mencari alamat terbaru dari ESP32...</div>
+
+  <script>
+    const scriptURL = "https://script.google.com/macros/s/AKfycbyk1DvlXrqv6zArZz4heu58OuapvEHCtVkXuhzaWycRSaj0P06UNxda9ghj3hqdTxolBA/exec";
+
+    fetch(scriptURL)
+      .then(response => response.text())
+      .then(ip => {
+        ip = ip.trim();
+        if (/^(25[0-5]|2[0-4]\d|1\d\d|\d{1,2})(\.(25[0-5]|2[0-4]\d|1\d\d|\d{1,2})){3}$/.test(ip)) {
+          document.getElementById("status").innerText = "Mengalihkan ke " + ip + " ...";
+          window.location.href = "http://" + ip;
+        } else {
+          document.getElementById("status").innerText = "Gagal mendapatkan IP yang valid: " + ip;
+        }
+      })
+      .catch(error => {
+        document.getElementById("status").innerText = "Terjadi kesalahan saat mengambil IP: " + error;
+      });
+  </script>
+</body>
+</html>
