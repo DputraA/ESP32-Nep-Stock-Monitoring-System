@@ -94,4 +94,13 @@ Secara default, sistem membaca 4 channel (`totalChannels = 4`). Untuk menambah j
 
 Agar lebih mudah mengakses IP lokal ESP32 tanpa mengetik alamat IP manual, gunakan file Redirect `Dashboard monitoring stock nepel.html`.
 
+## Catatan Tambahan
+Tempat penyimpanan fisik saat ini hanya mampu menampung 4 jenis material nepel dan menggunakan impraboard.
+Disarankan untuk mengganti tempat penyimpanan ke bahan stainless steel agar lebih kuat, awet, dan cocok digunakan di lingkungan pabrik.
+Pastikan power supply memberikan tegangan 5V stabil ke ESP32, dan 24V untuk sensor serta pilot lamp.
+
+![Dashboard](https://github.com/user-attachments/assets/8dd31693-6f9d-41be-ad02-e86e2364a81c)
+
+## Lisensi
+Proyek ini bersifat open-source dan bebas digunakan untuk edukasi dan pengembangan lebih lanjut.
 
