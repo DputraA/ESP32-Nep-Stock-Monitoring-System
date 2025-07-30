@@ -1,0 +1,148 @@
+(footprint "KF7.62-4P"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at -0.05 0.13 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "aad29d9a-e119-44d0-b955-337a3a238843")
+		(effects
+			(font
+				(size 1.5 1.5)
+				(thickness 0.3)
+				(bold yes)
+			)
+		)
+	)
+	(property "Value" "KF7.62-4P"
+		(at -0.08 -0.64 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "8a08a2e4-d6e4-40eb-a10d-3fe9ef6b4999")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at -0.08 -1.64 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "246eed96-c293-4c0d-9ab2-3f4b968b38e0")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at -0.08 -1.64 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "dbed0b26-6773-465e-a687-b5fe3cff7c99")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at -0.08 -1.64 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "e464d55c-7055-4b7c-9453-b698abf53b88")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_rect
+		(start -15.24 -6)
+		(end 15.24 6)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill none)
+		(layer "F.SilkS")
+		(uuid "0195437a-ba02-489d-be52-5ac774a7cede")
+	)
+	(fp_text user "${REFERENCE}"
+		(at -0.08 0.86 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "3901644c-0bdc-44c4-b58c-04294662e88d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole circle
+		(at -11.44 -4)
+		(size 3 3)
+		(drill 1.5)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "f73f2b12-7fec-4e7b-bb10-2aefbb781039")
+	)
+	(pad "2" thru_hole circle
+		(at -3.82 -4)
+		(size 3 3)
+		(drill 1.5)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "dd801e24-b54b-41a3-a799-257f70fe90fb")
+	)
+	(pad "3" thru_hole circle
+		(at 3.8 -4)
+		(size 3 3)
+		(drill 1.5)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "20af0ba2-6083-4295-adb0-c84e49fbe8d7")
+	)
+	(pad "4" thru_hole circle
+		(at 11.42 -4)
+		(size 3 3)
+		(drill 1.5)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "943954dc-33a9-4da2-ac21-2cebcf45ebc8")
+	)
+	(group ""
+		(uuid "4bd1d31d-9d44-46de-b70d-f59e9b0a6008")
+		(members "0195437a-ba02-489d-be52-5ac774a7cede" "20af0ba2-6083-4295-adb0-c84e49fbe8d7"
+			"246eed96-c293-4c0d-9ab2-3f4b968b38e0" "3901644c-0bdc-44c4-b58c-04294662e88d"
+			"8a08a2e4-d6e4-40eb-a10d-3fe9ef6b4999" "943954dc-33a9-4da2-ac21-2cebcf45ebc8"
+			"aad29d9a-e119-44d0-b955-337a3a238843" "dbed0b26-6773-465e-a687-b5fe3cff7c99"
+			"dd801e24-b54b-41a3-a799-257f70fe90fb" "e464d55c-7055-4b7c-9453-b698abf53b88"
+			"f73f2b12-7fec-4e7b-bb10-2aefbb781039"
+		)
+	)
+	(model "C:/Users/rifki/Download/kf7-62-1.snapshot.3/KF7_62-4P.STEP"
+		(offset
+			(xyz 7.6 -0.4 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 0 180)
+		)
+	)
+)

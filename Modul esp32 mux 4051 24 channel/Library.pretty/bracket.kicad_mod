@@ -1,0 +1,202 @@
+(footprint "bracket"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at -6.91 10.5 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "8172a68f-9f91-4b8e-9fc3-91757d2231ea")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "bracket"
+		(at -5.44 4.38 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "f0edfa13-7fad-4307-aa02-2a2fcc9334e7")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "8abdd792-6704-4ddf-9591-24272e0a3e44")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "cea26cf9-f2d7-4d24-b2ee-b1901e933b08")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0390168f-9ce9-46ec-b00d-cd5b4f1e4d3a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_rect
+		(start -22 -5.5)
+		(end 22 5.5)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill none)
+		(layer "B.SilkS")
+		(uuid "093fe94a-0a8f-4b63-b609-ecab7732211b")
+	)
+	(fp_circle
+		(center -12.5 0)
+		(end -9.45 0)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill none)
+		(layer "F.CrtYd")
+		(uuid "c7b5ad10-a832-4fa4-bf74-fc60c0ab6a77")
+	)
+	(fp_circle
+		(center 0 0)
+		(end 3.05 0)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill none)
+		(layer "F.CrtYd")
+		(uuid "4bbe7c8b-d26e-46ad-843b-2e1d1851c323")
+	)
+	(fp_circle
+		(center 12.5 0)
+		(end 15.55 0)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill none)
+		(layer "F.CrtYd")
+		(uuid "ae6a7513-eead-46ab-891a-441365221c9a")
+	)
+	(fp_text user "${REFERENCE}"
+		(at -3.85 6.85 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "2c93cb08-f89b-42f1-94fe-93dc816d9781")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(fp_text user "${REFERENCE}"
+		(at 4.63 9.88 0)
+		(layer "F.Fab")
+		(uuid "e029863c-b322-4462-b07a-c412dfa014b5")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "" np_thru_hole circle
+		(at -12.5 0)
+		(size 3.2 3.2)
+		(drill 3.2)
+		(layers "*.Cu" "*.Mask")
+		(uuid "59bc9c38-a65b-4a2f-99b3-fd1a42ee8a25")
+	)
+	(pad "" np_thru_hole circle
+		(at 0 0)
+		(size 3.2 3.2)
+		(drill 3.2)
+		(layers "*.Cu" "*.Mask")
+		(uuid "ab538a31-455b-4bb1-8fb3-5e2418882340")
+	)
+	(pad "" np_thru_hole circle
+		(at 12.5 0)
+		(size 3.2 3.2)
+		(drill 3.2)
+		(layers "*.Cu" "*.Mask")
+		(uuid "6dfb4d9f-5abc-4401-8e6a-904e76f82376")
+	)
+	(model "C:/Users/rifki/Download/drg-10-35mm-din-rail-mount-1.snapshot.9/DRG-10 DIN rail mount v7.step"
+		(offset
+			(xyz 0 0 -17.7)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+	(model "C:/Users/rifki/Download/M3x10 Philips Screw.stp"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+	(model "C:/Users/rifki/Download/M3x10 Philips Screw.stp"
+		(offset
+			(xyz 13 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+	(model "C:/Users/rifki/Download/M3x10 Philips Screw.stp"
+		(offset
+			(xyz -13 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)
